@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myCanvas{
+            border : 2px solid black;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="700" height="600"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        var grd = context.createLinearGradient(40,40,40,250);
+        grd.addColorStop(0,'blue');
+        grd.addColorStop(1,'white');
+        context.fillStyle = grd;
+        context.fillRect(40,40,600,250);
+
+        var grd1 = context.createLinearGradient(40,230,40,600);
+        grd1.addColorStop(0,'green');
+        grd1.addColorStop(1,'white');
+        context.fillStyle = grd1;
+        context.fillRect(40,230,600,230);
+
+        var grd2 = context.createLinearGradient(220,150,220,300);
+        grd2.addColorStop(0,'black');
+        grd2.addColorStop(1,'transparent');
+        context.lineWidth = 3; 
+        context.strokeStyle = grd2;
+        context.strokeRect(220,150,250,170);
+    </script>
+    
+</body>
+</html>
