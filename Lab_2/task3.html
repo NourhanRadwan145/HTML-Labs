@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pythagoras</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        margin-left: 20px;
+      }
+      .theorem {
+        margin-top: 20px;
+      }
+      .theorem-heading {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .mathml-equation {
+        font-size: 16px;
+        color: navy;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M 350 150 L 150 150 L 350 50 Z"
+        fill="red"
+        stroke="red"
+        stroke-width="2"
+      />
+
+      <line x1="150" y1="150" x2="350" y2="50" stroke="red" stroke-width="2" />
+      <text x="250" y="170">a</text>
+      <text x="370" y="110">b</text>
+      <text x="240" y="90">c</text>
+    </svg>
+
+    <div class="container">
+      <h2 class="theorem-heading">According to Pythagoras theorem</h2>
+      <math class="mathml-equation" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mi>c</mi>
+          <mo>=</mo>
+          <msqrt>
+            <mrow>
+              <msup>
+                <mi>a</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>+</mo>
+              <msup>
+                <mi>b</mi>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </msqrt>
+        </mrow>
+      </math>
+    </div>
+  </body>
+</html>
