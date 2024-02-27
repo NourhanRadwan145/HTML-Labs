@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #frame {
+            display: inline-block;
+            width: 300px;
+            height: 500px;
+            padding: 10px; /* Adjust the padding to control the size of the frame */
+            border: 2px solid red; /* Border around the frame */
+        }
+
+        #spade{
+            position: relative;
+            top: 130px;
+            width: 100px;
+            height: 90px;
+            left: 90px; 
+           
+        }
+        
+        #heart {
+      position: relative;
+      top: 25px;
+      width: 100px;
+      height: 90px;
+      transform: rotate(180deg);
+    }
+    #heart:before,
+    #heart:after {
+      position: absolute;
+      content: "";
+      left: 49px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: black;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+    #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+    #triangle-up {
+      width: 0px;
+      height: 0px;
+      position:relative;
+      top:-1px;
+      left: 30px; 
+    
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 60px solid black;
+    }
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="frame">
+        <div id="spade">
+            <div id="heart"></div>
+            <div id="triangle-up"></div>
+        </div>
+    </div>
+</body>
+</html>
